@@ -3,18 +3,18 @@ import moduleForAcceptance from 'phanlinks/tests/helpers/module-for-acceptance';
 
 moduleForAcceptance('Acceptance | homepage');
 
-test('should redirect to become a provider', function(assert) {
+test('should redirect to about the company', function(assert) {
   visit('/');
   andThen(function() {
-    assert.equal(currentURL(), '/become-provider', 'should redirect automatically');
+    assert.equal(currentURL(), '/about', 'should redirect automatically');
   });
 });
 
-test('should link to information about the company', function(assert) {
+test('should link to become a provider', function(assert) {
   visit('/');
-  click('a:contains("About")');
+  click('a:contains("Become")');
   andThen(function() {
-    assert.equal(currentURL(), '/about', 'should navigate to about');
+    assert.equal(currentURL(), '/become-provider', 'should navigate to become provider');
   });
 });
 

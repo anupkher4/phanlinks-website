@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="menu">
+    {{#link-to 'index'}}
+      <h1 class="left">
+        <em>PhanLinks</em>
+      </h1>
+    {{/link-to}}
+    <div class="left links">
+      {{#link-to 'about'}}
+        About
+      {{/link-to}}
+      {{#link-to 'become-provider'}}
+        Become A Provider
+      {{/link-to}}
+      {{#link-to 'how-it-works'}}
+        How It Works
+      {{/link-to}}
+      {{#link-to 'registration'}}
+        Registration
+      {{/link-to}}
+      {{#link-to 'contact'}}
+        Contact
+      {{/link-to}}
+    </div>
+  </div>
+  <div class="body">
+    {{outlet}}
+  </div>
+</div>
