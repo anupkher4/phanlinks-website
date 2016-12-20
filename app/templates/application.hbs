@@ -1,27 +1,43 @@
 <div class="container">
   <div class="menu">
-    {{#link-to 'index'}}
-      <h1 class="left">
-        <em>PhanLinks</em>
-      </h1>
-    {{/link-to}}
-    <div class="left links">
-      {{#link-to 'about'}}
-        About
-      {{/link-to}}
-      {{#link-to 'become-provider'}}
-        Become A Provider
-      {{/link-to}}
-      {{#link-to 'how-it-works'}}
-        How It Works
-      {{/link-to}}
-      {{#link-to 'registration'}}
-        Registration
-      {{/link-to}}
-      {{#link-to 'contact'}}
-        Contact
-      {{/link-to}}
-    </div>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <a class="navbar-brand">
+            {{#link-to 'index'}}
+              PhanLinks
+            {{/link-to}}
+          </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">About <span class="sr-only">(current)</span></a></li>
+            <li>
+              {{#link-to 'become-provider'}}
+                Become A Provider
+              {{/link-to}}
+            </li>
+            <li>
+              {{#link-to 'how-it-works'}}
+                How It Works
+              {{/link-to}}
+            </li>
+            <li>
+              {{#link-to 'registration'}}
+                Registration
+              {{/link-to}}
+            </li>
+            <li>
+              {{#link-to 'contact'}}
+                Contact
+              {{/link-to}}
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
   </div>
   <div class="body">
     {{outlet}}
