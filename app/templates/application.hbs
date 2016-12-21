@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="menu">
+  <div class="row">
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -13,7 +13,11 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">About <span class="sr-only">(current)</span></a></li>
+            <li>
+              {{#link-to 'about'}}
+                About
+              {{/link-to}}
+            </li>
             <li>
               {{#link-to 'become-provider'}}
                 Become A Provider
@@ -39,7 +43,7 @@
       </div><!-- /.container-fluid -->
     </nav>
   </div>
-  <div class="body">
+  <div class="row">
     {{outlet}}
   </div>
 </div>
