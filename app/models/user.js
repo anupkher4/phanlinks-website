@@ -3,6 +3,9 @@ import DS from 'ember-data';
 export default DS.Model.extend({
   authToken: DS.attr(),
   email: DS.attr(),
+  createdAt: DS.attr(),
+  updatedAt: DS.attr(),
+  bimpie: DS.attr(),
   password: DS.attr(),
   passwordConfirmation: DS.attr(),
   profile: DS.belongsTo('profile'),

@@ -18,6 +18,9 @@ export default DS.RESTSerializer.extend({
     return json;
   },
   normalize(modelClass, hash, prop) {
+    // prop is 'user'
+    // hash is the response payload
+    // modelClass is App.User
     return this._super(...arguments);
   }
 });
