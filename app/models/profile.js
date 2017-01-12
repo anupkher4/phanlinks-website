@@ -1,16 +1,16 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-  userId: DS.attr(),
-  username: DS.attr(),
-  firstname: DS.attr(),
-  lastname: DS.attr(),
-  cid: DS.attr(),
-  birthday: DS.attr(),
-  sex: DS.attr(),
-  avatar: DS.attr(),
-  avatarFileName: DS.attr(),
-  avatarFileType: DS.attr(),
-  avatarContent: DS.attr(),
-  avatarContentType: DS.attr()
+  userId: DS.attr('string'),
+  username: DS.attr('string'),
+  firstname: DS.attr('string'),
+  lastname: DS.attr('string'),
+  cid: DS.attr('string'),
+  birthday: DS.attr('string'),
+  sex: DS.attr('string'),
+  avatar: DS.attr('string'),
+  avatarFileName: DS.attr('string'),
+  avatarFileType: DS.attr('string'),
+  avatarContent: DS.attr('string'),
+  avatarContentType: DS.attr('string')
 });

@@ -13,17 +13,15 @@ export default Ember.Controller.extend({
 
       function success(user) {
         console.log('success');
-        console.log(`${user}`);
+        debugger;
       }
 
       function failure(reason) {
         console.log('failure');
-        console.log(`${reason.toString()}`);
+        debugger;
       }
 
-      _user.save();
-
-      var created = store.peekRecord('user', 4);
+      _user.save().then(success).catch(failure);
     }
   }
 });
