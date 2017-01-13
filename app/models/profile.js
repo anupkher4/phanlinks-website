@@ -8,6 +8,7 @@ export default DS.Model.extend({
   cid: DS.attr('string'),
   birthday: DS.attr('string'),
   sex: DS.attr('string'),
+  mobile: DS.attr('string'),
   avatar: DS.attr('string'),
   avatarFileName: DS.attr('string'),
   avatarFileType: DS.attr('string'),
