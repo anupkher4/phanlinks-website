@@ -1,1 +1,51 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url("assets/fonts/OpenSans-Light.eot");
+  src: url("assets/fonts/OpenSans-Light.eot?#iefix") format('embedded-opentype'), url("fonts/OpenSans-Light.woff") format('woff'), url("fonts/OpenSans-Light.ttf") format('truetype'), url("fonts/OpenSans-Light.svg#09be4bfe8975a657af6444a6f1d73848") format('svg');
+  font-style: normal;
+  font-weight: 200;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url("assets/fonts/OpenSans-Regular.eot");
+  src: url("assets/fonts/OpenSans-Regular.eot?#iefix") format('embedded-opentype'), url("fonts/OpenSans-Regular.woff") format('woff'), url("fonts/OpenSans-Regular.ttf") format('truetype'), url("fonts/OpenSans-Regular.svg#dc56f0938c09c27a4156bb0f8f5176a2") format('svg');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url("assets/fonts/OpenSans-Semibold.eot");
+  src: url("assets/fonts/OpenSans-Semibold.eot?#iefix") format('embedded-opentype'), url("fonts/OpenSans-Semibold.woff") format('woff'), url("fonts/OpenSans-Semibold.ttf") format('truetype'), url("fonts/OpenSans-Semibold.svg#b96880fafbf6b051ff49d9fe8a31137c") format('svg');
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url("assets/fonts/OpenSans-Bold.eot");
+  src: url("assets/fonts/OpenSans-Bold.eot?#iefix") format('embedded-opentype'), url("fonts/OpenSans-Bold.woff") format('woff'), url("fonts/OpenSans-Bold.ttf") format('truetype'), url("fonts/OpenSans-Bold.svg#72800b665ba60a9a58674e2a6befde3a") format('svg');
+  font-style: normal;
+  font-weight: 700;
+}
 
+html,
+button,
+input,
+select,
+textarea {
+  font-family: 'Open Sans', verdana, sans-serif;
+  outline: none;
+}
+
+body {
+  background-color: #e3e3e3;
+}
+
+img {
+  display: block;
+  margin: auto;
+}
+
+footer {
+  background-color: #89bdd3;
+  height: 50px;
+}

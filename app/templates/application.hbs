@@ -1,36 +1,42 @@
-<nav class="navbar navbar-inverse bg-inverse">
+<nav class="navbar navbar-toggleable-md navbar-light" style="background-color: #9ad3de;">
   <a class="navbar-brand">
     {{#link-to 'index'}}
       PhanLinks
     {{/link-to}}
   </a>
-  <ul class="nav navbar-nav">
-    <li class="nav-item">
-      {{#link-to 'about'}}
-        About
-      {{/link-to}}
-    </li>
-    <li class="nav-item">
-      {{#link-to 'become-provider'}}
-        Become A Provider
-      {{/link-to}}
-    </li>
-    <li class="nav-item">
-      {{#link-to 'how-it-works'}}
-        How It Works
-      {{/link-to}}
-    </li>
-    <li class="nav-item">
-      {{#link-to 'registration'}}
-        Registration
-      {{/link-to}}
-    </li>
-    <li class="nav-item">
-      {{#link-to 'contact'}}
-        Contact
-      {{/link-to}}
-    </li>
-  </ul>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="nav navbar-nav">
+      <li class="nav-item">
+        {{#link-to 'about' class="nav-link"}}
+          About
+        {{/link-to}}
+      </li>
+      <li class="nav-item">
+        {{#link-to 'become-provider' class="nav-link"}}
+          Become A Provider
+        {{/link-to}}
+      </li>
+      <li class="nav-item">
+        {{#link-to 'how-it-works' class="nav-link"}}
+          How It Works
+        {{/link-to}}
+      </li>
+      <li class="nav-item">
+        {{#link-to 'registration' class="nav-link"}}
+          Registration
+        {{/link-to}}
+      </li>
+      <li class="nav-item">
+        {{#link-to 'contact' class="nav-link"}}
+          Contact
+        {{/link-to}}
+      </li>
+    </ul>
+  </div>
 </nav>
 
 {{outlet}}
+
+<footer>
+  <p>Testing footer</p>
+</footer>
